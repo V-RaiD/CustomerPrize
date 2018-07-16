@@ -33,5 +33,7 @@ class Store {
       Integer.parseInt(values[5])
       );
     }
+
+    scan.close();
   }
 }
