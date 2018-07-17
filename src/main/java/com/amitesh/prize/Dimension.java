@@ -15,11 +15,11 @@ class Dimension {
     this.l = l;
   }
 
-  void setwidth(int w) {
+  void setWidth(int w) {
     this.w = w;
   }
 
-  void setLength(int h) {
+  void setHeight(int h) {
     this.h = h;
   }
 
@@ -59,5 +59,9 @@ class Dimension {
     }
 
     return false;
+  }
+
+  public String toString() {
+    return new String("\nLength : " + this.getLength() + " Width : " + this.getWidth() + " Height : " + this.getHeight() + " Volume : " + this.getVolume());
   }
 }

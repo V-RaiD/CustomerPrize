@@ -47,7 +47,7 @@ class Product {
     return this.dimension;
   }
 
-  static Comparator comparator = new Comparator<Product>() {
+  static Comparator<Product> comparator = new Comparator<Product>() {
     public int compare(Product p1, Product p2) {
       if(p1.getPrice() - p2.getPrice() < 0) {
         return 1;
